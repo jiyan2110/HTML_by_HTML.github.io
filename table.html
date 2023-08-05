@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="icon" href="341077.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Table</title>
+</head>
+<body>
+    <header>
+    <a href="index.html">&ltback</a>
+    <h1>Table in HTML</h1>
+    <hr>
+    <li><strong>syntax:</strong>&lt;table&gt;...&lt;/table&gt;</li>
+    <li>it is used to represent data in a tabular form.</li>
+    <table>
+        <thead>
+            <caption>
+                sample table caption
+            </caption>
+            <tr>
+                <th>usually empty</th>
+                <th scope="col">
+                    column head
+                </th>
+                <th>column head</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">row head</th>
+                <td >
+                    data box 
+                </td>
+                <td>
+                    data box
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">row head</th>
+                <td >
+                    data box 
+                </td>
+                <td>
+                    data box
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>
+        This is a simple table.
+    </h3>
+    <hr>
+    </header>
+    <main>
+    <p>Let me explain every box and its importance one by one</p>
+    <dl>
+    <dt><strong>sample table caption:</strong> </dt>
+    <dd>-it have the details of what table will contain, one can read table caption and can come to know about table without fully going through it.</dd>
+    <dd>-syntax: &ltcaption>...&lt/caption></dd>
+
+    <dt><strong>usually empty:</strong> </dt>
+    <dd>-it does not have any meaning to it. it is used when the table consists of row and column head both.</dd>
+    <dd>-syntax: &npsb;</dd>
+
+    <dt><strong>column head:</strong> </dt>
+    <dd>-it shows the topic which the entire column will follow.</dd>
+    <dd>-syntax: &ltth scope="col">...&lt/th></dd>
+
+    <dt><strong>row head:</strong> </dt>
+    <dd>-it shows the topic which the entire row will follow.</dd>
+    <dd>-syntax:&ltth scope="row">...&lt/th></dd>
+
+    <dt><strong>data box:</strong> </dt>
+    <dd>-yeah, you guessed it right. this contains the data for which the table is made.</dd>
+    <dd>-syntax:&lttd>...&lt/td></dd>
+</dl>
+<hr>
+<h3>Cool things you can perform using table:</h3>
+<hr>
+<li style="font-size: 30px;">common row:</li>
+<table>
+    <tr>
+        <td rowspan="2">
+            something like this.
+        </td>
+        <td>this is different.</td>
+    </tr>
+    <tr>
+        <td>
+            this is different.
+        </td>
+    </tr>
+</table>
+<p>
+    you can achieve this by setting the rowspan attribute to any number you want.
+</p>
+<p>
+    in this case it was 2;
+</p>
+<p>
+    <strong>syntax:</strong> &lt;td rowspan="2">...&lt;/td&gt;
+</p>
+<hr>
+<li style="font-size: 30px;">common columns:</li>
+<table>
+    <tr>
+        <td colspan="2">
+            something like this.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            this is different.
+        </td>
+        <td>
+            this is different.
+        </td>
+    </tr>
+</table>
+<p>
+    you can achieve this by setting the colspan attribute to any number you want.
+</p>
+<p>
+    in this case it was 2;
+</p>
+<p>
+    <strong>syntax:</strong> &lt;td colspan="2">...&lt;/td&gt;
+</p>
+</main>
+<hr>
+<footer>
+    &lt;&lt;&lt; &copy;<a href="jiyan.html">Jiyan Bhatt</a>&gt;&gt;&gt;
+  </footer>
+</body>
+</html>

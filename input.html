@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="input" />
+    <link rel="icon" href="341077.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <head><a href="index.html">&lt;back</a>
+    <hr />
+    <h1>Forms and Input in HTML</h1>
+    <hr />
+
+    <dl>
+      <dt>
+        <h3>what is form?</h3>
+      </dt>
+      <dd>
+        The form element is a container for different types of input elements,
+        such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+      </dd>
+      <dd><strong>syntax:</strong>&lt;form&gt;...&lt;/form&gt;</dd>
+    </head>
+    <main>
+      <ul>
+        <strong>>>>attributes:</strong>
+        <li>
+          <strong>action:</strong> it contains the address of the file/web where it will store
+          the content input by the user.
+        </li>
+        <li>
+          <strong>method:</strong> It is the HTTP method that the browser uses to submit the
+          form. possible values are
+          <ul>
+            <li>
+              post: <br />
+              -collects the data and sent it to the designated server<br />
+              -When using POST, the data is sent in the body of the HTTP
+              request, separate from the URL.<br />
+              -This makes the data invisible in the URL and provides a more
+              secure way of transmitting sensitive information.<br />
+              -The data sent through POST is not bookmarked, cached, or visible
+              in the URL. <br />
+              -It can handle larger amounts of data compared to GET.<br />
+              -POST requests are generally considered more secure than GET
+              requests for handling sensitive information.<br />
+            </li>
+            <li>
+              get: <br />
+              -When using GET, the data is appended to the URL in the form of
+              query parameters. <br />
+              -For example:-
+              http://example.com/page?param1=value1&&param2=value2. <br />
+              -The data sent through GET is visible in the URL, which means it
+              can be bookmarked, cached, and shared. It has a limitation on the
+              length of the URL and the amount of data that can be -sent. <br />
+              -It is important to note that GET should not be used when dealing
+              with sensitive or private data, as the data is exposed in the URL.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      
+      </li>
+    <li>
+        exmaple:
+        <xmp style="font-size: 18px;">
+            <form action="https://httpbin.org/get" method="get"></form> //to get
+            <form action="https://httpbin.org/post" method="post"></form> // to post
+        </xmp>
+    </li>
+    </dl>
+    <hr>
+    <h5>fieldset: it represent a set of inputs under a common name.</h5>
+       <h5>legend: It creates a box like</h5>
+        <fieldset>
+          <legend>this</legend>
+          <p>
+            it is important to notice that legend and fieldset are used
+            together, legend expands its box size with respect to the size of
+            fieldset
+          </p>
+        </fieldset>
+    <hr>
+    <h5>Label:</h5>
+    <p>
+        -this is used to improve the accesibility of the input we used.
+    </p>
+    <p>
+        -we can directly click on the labelled input or textarea and access the input box.
+    </p>
+    <h5>attributes:</h5>
+    <p>
+        for: The for attribute value matches the id attribute of the associated form control. This association informs screen readers and assists in making the label clickable.
+    </p>
+    <h5>example:</h5>
+    <xmp style="font-size: 18px;">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+    </xmp>
+    <hr>
+    <h3>INPUT</h3>
+    <p>
+        -In HTML, the &lt;input&gt; element is used to create interactive form controls that allow users to enter and submit data. <br>
+        -It is one of the fundamental elements for building forms and collecting user input on websites.
+    </p>
+    <h4>Attributes</h4>
+    <table>
+        <tr>
+            <th scope="col">
+                Attribute
+            </th>
+            <th scope="col">
+                Description
+            </th>
+        </tr>
+        <tr>
+            <td>
+                type
+            </td>
+            <td>
+                specify the input control <br>
+                'text' , 'password' , 'number' , 'checkboxes' , etc.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                provides the name for the input control.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                value
+            </td>
+            <td>
+                set the initial value for the input control
+            </td>
+        </tr>
+        <tr>
+            <td>
+                placeholder
+            </td>
+            <td>
+                gives short hint what will come in that input
+            </td>
+        </tr>
+        <tr>
+            <td>
+                required
+            </td>
+            <td>
+                give the importance to the input, the form cant be submitted if all required inputs are not filled. 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                autocomplete
+            </td>
+            <td>
+                it shows all previous entries within a drop down page.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                min-max
+            </td>
+            <td>
+                this provide upper and lower limit to the range specific input type.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                pattern
+            </td>
+            <td>
+                it ask user to input in a specific order only
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                autofocus
+            </td>
+            <td>
+                can be used only once in a page, it directly focuses the cursor to the input box.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                step
+            </td>
+            <td>
+                for a number type input, on each change with the arrow key the number of steps it will jump is decided by this.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                cols
+            </td>
+            <td>
+                decides the number of columns in textarea.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                rows
+            </td>
+            <td>
+                decides the number of rows in textarea.
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <h4>Types</h4>
+
+    <table>
+        <tr>
+            <th scope="col">
+                Name
+            </th>
+            <th scope="col" >
+                Description
+            </th>
+            <th scope="col">
+                example
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Text
+            </td>
+            <td>
+                it is used for a simple text input
+            </td>
+            <td>
+                <p>
+                    <label for="firstName">Name:</label>
+                    <input
+                      type="text"
+                      name="firstName"
+                      id="firstName"
+                      placeholder="Jiyan"
+                      autocomplete="on"
+                      required
+                      autofocus
+                    />
+                  </p>          
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password
+            </td>
+            <td>
+                it is similar to text, it just changes the input to dots 
+            </td>
+            <td>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="Password"
+                    id="Password"
+                    placeholder="enter password"
+                    required
+                    ">
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Number
+            </td>
+            <td >
+                this restricts the input to numeric value, which can be set by changing the value through toggle arrow  
+            </td>
+            <td>
+                <p>
+                    <label for="number">year of birth:</label>
+                    <input type="number" name="number" id="number"
+                    placeholder="2014"
+                    step="1"
+                    min="1950" max="2022">
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email
+            </td>
+            <td>
+                this ensure that user has correctly input the email address
+            </td>
+            <td>
+                <p>
+                    <label for="email">enter email:</label>
+                    <input type="email" name="email" id="email"
+                    placeholder="abc@gmail.com">
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                URL input
+            </td>
+            <td>
+                this enforces input validation to ensure the entered value is a valid url.
+            </td>
+            <td>
+                <p>
+                    <label for="url">Enter link:</label>
+                    <input type="url" name="url" id="url" placeholder="https://chat.openai.com/">
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                checkbox
+            </td>
+            <td>
+                -it can be multiple. <br>
+                -it is only two state, checked and unchecked.
+            </td>
+            <td>
+                <p>
+                    <input type="checkbox" name="maths assignment" id="cb1">
+                    <label for="cb1">maths assignment</label>
+                    <br>
+                    <input type="checkbox" name="physics assignment" id="cb2">
+                    <label for="cb2">physics assignment</label>
+                    <br>
+                    <input type="checkbox" name="gym" id="cb3">
+                    <label for="cb3">gym</label>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                radio
+            </td>
+            <td>
+                similar to checkbox, but only one can be selected at a time
+            </td>
+            <td>
+                <p>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">male</label>
+                    <br>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">female</label>
+
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                button
+            </td>
+            <td>
+                clickable input which can submit, reset the form.
+            </td>
+            <td>
+                <input type="submit" value="submit">
+                <input type="submit" value="reset">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                datalist
+            </td>
+            <td>
+                provides multiple option in the dropbox to select from.
+            </td>
+            <td>
+                <p>
+                    <label for="coffee">Favourite Coffee:</label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-list" />
+                    <datalist id="coffee-list">
+                      <option value="regular coffee"></option>
+                      <option value="iced coffee"></option>
+                      <option value="Latte"></option>
+                      <option value="cappuccino"></option>
+                      <option value="Americano"></option>
+                      <option value="other"></option>
+                    </datalist>
+                  </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                select 
+            </td>
+            <td>
+                It provides a closed list of options that the user can choose from by clicking or navigating with the keyboard.
+            </td>
+            <td>
+                <p>
+                    <label for="coffee">Favourite Coffee:</label>
+                    <select name="coffee" id="coffee" multiple size="7">
+                      <optgroup label="coffees">
+                        <option value="regular coffee">regular coffee</option>
+                        <option value="iced coffee">Iced coffee</option>
+                      </optgroup>
+                      <optgroup label="Espresso Drinks">
+                        <option value="latte">Latte</option>
+                        <option value="cappuccino">cappuccino</option>
+                        <option value="americano">Americano</option>
+                      </optgroup>
+                      <option value="other">other</option>
+                    </select>
+                  </p> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                date
+            </td>
+            <td>
+                it is used to input date, provide calender for ease of input
+            </td>
+            <td>
+                <p>
+                    <label for="date">Enter date of birth:</label>
+                    <input type="date" name="date" id="date" placeholder="21/10/2004">
+                </p>
+            </td>
+        </tr>
+    </table>
+<hr>
+</main>
+    <footer>
+    &lt;&lt;&lt; &copy;<a href="jiyan.html">Jiyan Bhatt</a>&gt;&gt;&gt;
+  </footer>
+  </body>
+</html>

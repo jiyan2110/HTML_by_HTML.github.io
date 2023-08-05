@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="about me" />
+    <title>Jiyan Bhatt</title>
+    <link rel="icon" href="341077.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <a href="index.html">&lt;back</a>
+    <h1>Hi! My name is Jiyan Bhatt</h1>
+    <h4>I am a competitive programmer who just recently started HTML</h4>
+    <h4>matter of fact HTML is cool.</h4>
+    <h4>
+      But what's more cooler than HTML is a connection request on my
+      <a href="https://www.linkedin.com/in/jiyanbhatt/">LinkedIn</a>.
+    </h4>
+    <hr />
+    <p>if you want to download <a href="341077.png" download>favicon </a></p>
+    <hr />
+    <dl>
+      <dt>contact me at:</dt>
+      <dd>
+        <a href="https://www.instagram.com/jiyan_bhatt2110/">instagram</a>
+      </dd>
+      <dd>
+        <a href="mailto:jiyan.bhatt@gmail.com">gmail</a>
+      </dd>
+      <dd>Dial <a href="tel: +917045355862">my number</a></dd>
+      <dd>
+        Open <a href="https://www.google.com/" target="_blank">Google</a> in a
+        new tab.
+      </dd>
+      <dd>Go back to <a href="/New HTML FCC/">main page.</a></dd>
+    </dl>
+    <hr />
+    <p>I would really like to hear from you.</p>
+
+    <form action="https://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p>
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="imap"
+            autocomplete="on"
+            required
+            autofocus
+          />
+        </p>
+
+        <p>
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="usay"
+            autocomplete="on"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="enter password"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="Phone">Phone:</label>
+          <input
+            type="tel"
+            name="Phone"
+            id="Phone"
+            placeholder="555-555-5555"
+            autocomplete="on"
+            pattern="[0-9]{10}"
+            required
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Send me a note</legend>
+        <label for="message">your message</label>
+        <br />
+        <textarea
+          type="message"
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="type your message"
+        ></textarea>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button
+        type="submit"
+        formaction="https://httpbin.org/post"
+        formmethod="post"
+      >
+        post
+      </button>
+      <button type="reset">reset</button>
+    </form>
+  </body>
+</html>
